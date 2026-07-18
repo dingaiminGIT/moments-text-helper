@@ -1,0 +1,113 @@
+<view class="page-shell">
+  <view class="hero">
+    <view class="brand-mark">防</view>
+    <view class="hero-copy">
+      <text class="hero-title">发圈防折叠</text>
+      <text class="hero-subtitle">无广告 · 不联网 · 文案只在本地处理</text>
+    </view>
+    <navigator class="about-link" url="/pages/about/about">说明</navigator>
+  </view>
+
+  <view class="notice">
+    <view class="notice-dot"></view>
+    <text>微信的折叠规则会变化，本工具只能降低折叠概率，无法承诺 100% 有效。</text>
+  </view>
+
+  <view class="card editor-card">
+    <view class="card-head">
+      <view class="card-heading">
+        <text class="step-label">STEP 1</text>
+        <text class="card-title">粘贴朋友圈文案</text>
+      </view>
+      <view class="head-actions">
+        <button class="text-action" bindtap="pasteText">粘贴</button>
+        <button class="text-action muted" bindtap="clearText" wx:if="{{inputText}}">清空</button>
+      </view>
+    </view>
+
+    <textarea
+      class="editor"
+      value="{{inputText}}"
+      placeholder="在这里粘贴想发的朋友圈文案…"
+      placeholder-class="editor-placeholder"
+      maxlength="5000"
+      auto-height
+      bindinput="onInput"
+    ></textarea>
+
+    <view class="counter-row">
+      <text>{{inputCount}} 字</text>
+      <button class="sample-button" bindtap="useSample" wx:if="{{!inputText}}">试试示例文案</button>
+    </view>
+  </view>
+
+  <view class="card mode-card">
+    <view class="card-head mode-head">
+      <view class="card-heading">
+        <text class="step-label">STEP 2</text>
+        <text class="card-title">选择处理方式</text>
+      </view>
+    </view>
+
+    <view class="mode-list">
+      <view
+        class="mode-item {{mode === item.id ? 'mode-active' : ''}}"
+        wx:for="{{modes}}"
+        wx:key="id"
+        data-mode="{{item.id}}"
+        bindtap="selectMode"
+      >
+        <view class="radio"><view class="radio-core" wx:if="{{mode === item.id}}"></view></view>
+        <view class="mode-copy">
+          <view class="mode-title-row">
+            <text class="mode-title">{{item.name}}</text>
+            <text class="recommend" wx:if="{{item.recommended}}">推荐</text>
+          </view>
+          <text class="mode-desc">{{item.description}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <button class="primary-button" bindtap="generate" loading="{{generating}}" disabled="{{!inputText}}">
+    生成可复制文案
+  </button>
+
+  <view class="card result-card" wx:if="{{outputText}}">
+    <view class="card-head">
+      <view class="card-heading">
+        <text class="step-label success-label">READY</text>
+        <text class="card-title">处理完成</text>
+      </view>
+      <text class="result-count">{{outputCount}} 字</text>
+    </view>
+
+    <view class="result-box">
+      <text user-select>{{outputText}}</text>
+    </view>
+
+    <button class="copy-button" bindtap="copyResult">复制文案</button>
+    <text class="copy-tip">复制后点击右上角关闭按钮返回微信，再打开朋友圈长按粘贴；若仍折叠，可返回尝试“加强处理”。</text>
+  </view>
+
+  <view class="privacy-line">
+    <text class="shield">✓</text>
+    <text>没有服务器，不收集也不上传你的任何文案</text>
+  </view>
+  <view class="safe-bottom"></view>
+</view>
+
+<view class="privacy-mask" wx:if="{{showPrivacy}}">
+  <view class="privacy-dialog">
+    <text class="privacy-title">剪贴板使用说明</text>
+    <text class="privacy-copy">仅当你主动点击“粘贴”或“复制”时，小程序才会读取或写入系统剪贴板。文案只在本机处理，不会上传。</text>
+    <button class="privacy-contract" bindtap="openPrivacyContract">查看《小程序用户隐私保护指引》</button>
+    <button
+      id="agree-btn"
+      class="privacy-agree"
+      open-type="agreePrivacyAuthorization"
+      bindagreeprivacyauthorization="agreePrivacy"
+    >同意并继续</button>
+    <button class="privacy-cancel" bindtap="disagreePrivacy">暂不同意</button>
+  </view>
+</view>

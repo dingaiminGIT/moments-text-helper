@@ -1,0 +1,390 @@
+.page-shell {
+  padding: 34rpx 28rpx 0;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  margin: 8rpx 4rpx 30rpx;
+}
+
+.brand-mark {
+  width: 84rpx;
+  height: 84rpx;
+  border-radius: 25rpx;
+  background: linear-gradient(145deg, #16b777, #07975d);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 38rpx;
+  font-weight: 700;
+  box-shadow: 0 10rpx 30rpx rgba(8, 157, 96, 0.22);
+}
+
+.hero-copy {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 22rpx;
+}
+
+.hero-title {
+  font-size: 38rpx;
+  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: 1rpx;
+}
+
+.hero-subtitle {
+  margin-top: 8rpx;
+  color: #76807c;
+  font-size: 23rpx;
+}
+
+.about-link {
+  padding: 14rpx 10rpx;
+  color: #64706b;
+  font-size: 25rpx;
+}
+
+.notice {
+  display: flex;
+  align-items: flex-start;
+  padding: 22rpx 24rpx;
+  margin-bottom: 24rpx;
+  border-radius: 20rpx;
+  background: #eef6f2;
+  color: #527064;
+  font-size: 24rpx;
+  line-height: 1.65;
+}
+
+.notice-dot {
+  flex: 0 0 auto;
+  width: 10rpx;
+  height: 10rpx;
+  border-radius: 50%;
+  margin: 15rpx 15rpx 0 0;
+  background: #12aa6c;
+}
+
+.card {
+  background: #fff;
+  border-radius: 28rpx;
+  padding: 30rpx;
+  margin-bottom: 24rpx;
+  box-shadow: 0 10rpx 40rpx rgba(24, 41, 35, 0.055);
+}
+
+.card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25rpx;
+}
+
+.card-heading {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.step-label,
+.card-title {
+  display: block;
+}
+
+.step-label {
+  color: #0aa566;
+  font-size: 19rpx;
+  font-weight: 700;
+  letter-spacing: 2rpx;
+  margin-bottom: 6rpx;
+}
+
+.card-title {
+  font-size: 31rpx;
+  font-weight: 650;
+  white-space: nowrap;
+}
+
+.head-actions {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  margin-left: 20rpx;
+}
+
+.text-action,
+.sample-button {
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+  padding: 6rpx 12rpx;
+  color: #0a9d62;
+  background: transparent;
+  font-size: 25rpx;
+  line-height: 1.5;
+}
+
+.text-action {
+  flex: 0 0 auto;
+  width: auto;
+  min-width: 0;
+}
+
+.text-action.muted {
+  color: #929a97;
+}
+
+.editor {
+  width: 100%;
+  min-height: 260rpx;
+  max-height: 620rpx;
+  box-sizing: border-box;
+  padding: 24rpx;
+  border-radius: 20rpx;
+  background: #f7f8f8;
+  font-size: 28rpx;
+  line-height: 1.7;
+}
+
+.editor-placeholder {
+  color: #a8afac;
+}
+
+.counter-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 54rpx;
+  margin-top: 12rpx;
+  color: #9aa19e;
+  font-size: 22rpx;
+}
+
+.sample-button {
+  margin-right: -12rpx;
+  font-size: 23rpx;
+}
+
+.mode-head {
+  margin-bottom: 12rpx;
+}
+
+.mode-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12rpx;
+}
+
+.mode-item {
+  display: flex;
+  padding: 22rpx 20rpx;
+  border: 2rpx solid #edf0ef;
+  border-radius: 20rpx;
+  transition: all 0.2s ease;
+}
+
+.mode-active {
+  border-color: #16ad6e;
+  background: #f1faf6;
+}
+
+.radio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 30rpx;
+  height: 30rpx;
+  margin: 5rpx 20rpx 0 0;
+  box-sizing: border-box;
+  border: 3rpx solid #b9c1bd;
+  border-radius: 50%;
+}
+
+.mode-active .radio {
+  border-color: #10a869;
+}
+
+.radio-core {
+  width: 14rpx;
+  height: 14rpx;
+  border-radius: 50%;
+  background: #10a869;
+}
+
+.mode-copy {
+  flex: 1;
+}
+
+.mode-title-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 7rpx;
+}
+
+.mode-title {
+  font-size: 28rpx;
+  font-weight: 600;
+}
+
+.recommend {
+  margin-left: 12rpx;
+  padding: 3rpx 10rpx;
+  border-radius: 8rpx;
+  background: #dff5e9;
+  color: #0b9b60;
+  font-size: 19rpx;
+}
+
+.mode-desc {
+  color: #808985;
+  font-size: 23rpx;
+  line-height: 1.55;
+}
+
+.primary-button,
+.copy-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 96rpx;
+  border-radius: 24rpx;
+  background: linear-gradient(135deg, #16b878, #099d62);
+  color: #fff;
+  font-size: 30rpx;
+  font-weight: 650;
+  box-shadow: 0 12rpx 30rpx rgba(9, 157, 98, 0.2);
+}
+
+.primary-button {
+  margin: 30rpx 0;
+}
+
+.primary-button[disabled] {
+  background: #cbd1ce;
+  color: #f4f5f5;
+  box-shadow: none;
+}
+
+.success-label {
+  color: #0aa566;
+}
+
+.result-count {
+  color: #8d9692;
+  font-size: 22rpx;
+}
+
+.result-box {
+  max-height: 560rpx;
+  overflow: auto;
+  padding: 26rpx;
+  border-radius: 20rpx;
+  background: #f7f8f8;
+  font-size: 27rpx;
+  line-height: 1.75;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.copy-button {
+  height: 88rpx;
+  margin-top: 24rpx;
+  box-shadow: none;
+}
+
+.copy-tip {
+  display: block;
+  margin: 16rpx 8rpx 0;
+  color: #8a938f;
+  font-size: 22rpx;
+  line-height: 1.55;
+  text-align: center;
+}
+
+.privacy-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 34rpx 0 6rpx;
+  color: #929b97;
+  font-size: 22rpx;
+}
+
+.shield {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 27rpx;
+  height: 27rpx;
+  margin-right: 10rpx;
+  border-radius: 50%;
+  background: #dfe8e4;
+  color: #6b7c75;
+  font-size: 18rpx;
+}
+
+.privacy-mask {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40rpx;
+  background: rgba(19, 29, 25, 0.48);
+}
+
+.privacy-dialog {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 40rpx 34rpx 26rpx;
+  border-radius: 30rpx;
+  background: #fff;
+}
+
+.privacy-title {
+  display: block;
+  margin-bottom: 20rpx;
+  font-size: 34rpx;
+  font-weight: 700;
+  text-align: center;
+}
+
+.privacy-copy {
+  display: block;
+  color: #68736e;
+  font-size: 25rpx;
+  line-height: 1.75;
+}
+
+.privacy-contract {
+  margin: 12rpx 0 28rpx;
+  padding: 8rpx 0;
+  background: transparent;
+  color: #0a9d62;
+  font-size: 24rpx;
+  text-align: left;
+}
+
+.privacy-agree {
+  height: 86rpx;
+  border-radius: 22rpx;
+  background: #0aa566;
+  color: #fff;
+  font-size: 28rpx;
+  line-height: 86rpx;
+}
+
+.privacy-cancel {
+  margin-top: 8rpx;
+  background: transparent;
+  color: #818a86;
+  font-size: 25rpx;
+}
