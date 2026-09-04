@@ -1,0 +1,9 @@
+{
+  "desc": "仅包含本地工具页面",
+  "rules": [
+    {
+      "action": "disallow",
+      "page": "*"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="background" x1="120" y1="90" x2="910" y2="930" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1edb7a"/>
+      <stop offset="0.52" stop-color="#0fbd6d"/>
+      <stop offset="1" stop-color="#078f58"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#background)"/>
+  <text
+    x="512"
+    y="522"
+    fill="#ffffff"
+    font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif"
+    font-size="220"
+    font-weight="700"
+    letter-spacing="10"
+    text-anchor="middle"
+    dominant-baseline="middle"
+  >防折叠</text>
+</svg>

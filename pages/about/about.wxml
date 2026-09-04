@@ -1,0 +1,21 @@
+<view class="about-page">
+  <view class="about-card">
+    <text class="about-title">它是怎么工作的？</text>
+    <text class="paragraph">小程序会在文案中加入不可见的 Unicode 分隔符，或在适合的位置增加段落间距。肉眼阅读基本不受影响，但微信可能把它识别为经过重新组织的文本。</text>
+  </view>
+
+  <view class="about-card">
+    <text class="about-title">使用建议</text>
+    <view class="item"><text class="number">1</text><text>先用“轻处理”，它最能保留原始排版。</text></view>
+    <view class="item"><text class="number">2</text><text>如果仍然折叠，再尝试“自然分段”或“加强处理”。</text></view>
+    <view class="item"><text class="number">3</text><text>链接和邮箱不会被插入不可见符号，避免地址失效。</text></view>
+    <view class="item"><text class="number">4</text><text>不同微信版本、文案长度和发布频率都可能影响结果。</text></view>
+  </view>
+
+  <view class="about-card privacy-card">
+    <text class="about-title">隐私说明</text>
+    <text class="paragraph">所有处理都在你的手机上完成。小程序没有服务器和账号系统，也不会保存和上传文案。</text>
+  </view>
+
+  <text class="footer">仅供个人排版使用 · 请遵守微信平台规则</text>
+</view>
