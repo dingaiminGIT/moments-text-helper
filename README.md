@@ -39,3 +39,7 @@
 ├── utils/text.js  文案处理逻辑
 └── project.config.json
 ```
+
+## 许可
+
+MIT License。工具只处理用户主动输入或粘贴的文本，不读取微信账号、聊天记录或朋友圈内容。
